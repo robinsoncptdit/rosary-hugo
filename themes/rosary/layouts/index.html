@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "top.html" . }}
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "bigblock.html" . }}
+
+        <!-- {{ partial "carousel.html" . }}-->
+
+        {{ partial "features.html" . }}
+
+
+        {{ partial "middle_blurb.html" . }}
+
+        <!-- {{ partial "recent_posts.html" . }} -->
+
+
+{{ partial "parish-schedule.html" . }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/#/collections/post";
+        });
+      }
+    });
+  }
+</script>
+
+  </body>
+</html>
