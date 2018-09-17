@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+
+media_folder: "static/img" # Folder where user uploaded files should go
+public_folder: "img"
+
+collections: # A list of collections the CMS should be able to edit
+  #- name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+  #  label: "Post" # Used in the UI, ie.: "New Post"
+  #  folder: "content/blog" # The path to the folder where the documents are stored
+  #  create: true # Allow users to create new documents in this collection
+  #  fields: # The fields each document in this collection have
+  #    - {label: "Title", name: "title", widget: "string"}
+  #    - {label: "Publish Date", name: "date", widget: "datetime"}
+  #    - {label: "Image", name: "banner", widget: "image", required: false}
+  #    - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "data"
+    label: "Settings"
+    files:
+      - file: "data/settings.yaml"
+        label: "Site Settings"
+        name: "site_settings"
+        fields:
+          - {label: Site Title, name: site_title, widget: string}
+          - {label: Site Address, name: site_address, widget: string}
+          - {label: Site City, name: site_city, widget: string}
+          - {label: Site State, name: site_state, widget: string}
+          - {label: Site Zip, name: site_zip, widget: string}
+          - {label: Phone Number 1-XXX-XXX-XXXX, name: site_phone, widget: string}
+          - {label: Email, name: site_email, widget: string}
+          - {label: ChurchDB URL, name: site_churchDBURL, widget: string}
+          - {label: eGiving URL, name: site_eGiving, widget: string}
