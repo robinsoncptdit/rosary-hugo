@@ -3,10 +3,7 @@
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-md-6 d-md-block d-none">
-                <p class="hidden-sm hidden-xs">Contact us at {{ .Site.Data.settings.site_phone | safeHTML}}&nbsp;or {{ .Site.Data.settings.site_email | safeHTML}}.</p>
-                <p class="hidden-md hidden-lg"><a href="{{ .Site.Data.settings.site_phone}}" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
-          <a href="mailto:{{ .Site.Data.settings.site_email}}" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
-          </p>
+                <p>Contact us at {{ .Site.Data.settings.site_phone | safeHTML}}&nbsp;or {{ .Site.Data.settings.site_email | safeHTML}}.</p>
             </div>
             <div class="col-md-6">
                 <div class="d-flex justify-content-md-end justify-content-between">
