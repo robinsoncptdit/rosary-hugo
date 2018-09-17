@@ -1,88 +1,21 @@
-<footer id="footer">
-    <div class="container">
-
-
-      <div class="col-md-4 col-sm-6">
-{{ if gt (len .Site.Data.settings.site_address) 0 }}
-        <h4>{{ i18n "contactTitle" }}</h4>
-
-          {{ .Site.Data.settings.site_title }}
-          <br>{{ .Site.Data.settings.site_address }}
-          <br>{{ .Site.Data.settings.site_city }}, {{ .Site.Data.settings.site_state }} {{ .Site.Data.settings.site_zip  }}
-          <br>{{ .Site.Data.settings.site_phone }}
-          <br>{{ .Site.Data.settings.site_email }}
-          <br><a href="/contact" class="btn btn-small btn-template-main">{{ i18n "contactGoTo" }}</a>
-
-          <hr class="hidden-md hidden-lg hidden-sm">
-{{ end }}
-      </div>
-      <!-- /.col-md-4 -->
-
-
-
-        <div class="col-md-4 col-sm-6">
-
-            {{ if isset .Site.Params "recent_posts" }} {{ if .Site.Params.recent_posts.enable }}
-            <h4>{{ i18n "recentPosts" }}</h4>
-
-            <div class="blog-entries">
-                {{ range first 3 (where .Site.Pages "Type" "blog") }}
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="{{ .Permalink }}">
-                          {{ if isset .Params "banner" }}
-                            <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="{{ .Title }}">
-                          {{ else }}
-                            <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="{{ .Title }}">
-                          {{ end }}
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
-                    </div>
-                </div>
-                {{ end }}
+<footer class="main-footer">
+    <div class="container text-center-sm">
+        <div class="row text-center center d-flex align-items-center">
+            <div class="col-md-4 text-uppercase pb-4 pb-md-0">
+                <p> 5622 Julie Drive  <br>Highway 231 Bayou George <br>Panama City, FL 32404</p>
             </div>
-
-            <hr class="hidden-md hidden-lg">
-            {{ end }} {{ end }}
-
+            <div class="col-md-4">
+                <img src="img/olr-footer.png" alt="..." class="img-fluid">
+            </div>
+            <div class="col-md-4 text-uppercase pt-4 pt-md-0">
+                <p>Phone: (850) 769-5067<br>
+Fax: (850) 769-1227</p>
+            </div>
         </div>
-        <!-- /.col-md-4 -->
-
-        {{ if isset .Site.Params "about_us" }}
-          <div class="col-md-4 col-sm-6">
-              <!--<h4>{{ i18n "aboutUs" }}</h4>-->
-              <h4>QUICK LINKS</h4>
-              {{ .Site.Params.about_us | markdownify }}
-
-              <hr class="hidden-md hidden-lg hidden-sm">
-
-          </div>
-          <!-- /.col-md-4 -->
-          {{ end }}
-
     </div>
-    <!-- /.container -->
+    <div class="copyrights">
+        <div class="container text-center">
+            <p>© 2018. <a href="https://ptdiocese.org">The Diocese of Pensacola-Tallahassee</a></p>
+        </div>
+    </div>
 </footer>
-
-<!-- /#footer -->
-
-<!-- *** FOOTER END *** -->
-
-<!-- *** COPYRIGHT ***
-_________________________________________________________ -->
-
-<div id="copyright">
-    <div class="container">
-        <div class="col-md-12">
-            {{ if isset .Site.Params "copyright" }}
-            <p class="pull-left">{{ .Site.Params.copyright | safeHTML }}</p>
-            {{ end }}
-
-        </div>
-    </div>
-</div>
-<!-- /#copyright -->
-
-<!-- *** COPYRIGHT END *** -->

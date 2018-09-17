@@ -1,24 +1,32 @@
-{{ if .Site.Params.topbar.enable }}
-<div id="top">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-5">
-        <!--{{ .Site.Params.topbar.text | safeHTML }} - {{ .Site.Data.settings.site_phone | safeHTML}}-->
-        <p class="hidden-sm hidden-xs">Contact us at {{ .Site.Data.settings.site_phone | safeHTML}} or {{ .Site.Data.settings.site_email | safeHTML}}</p>
-          <p class="hidden-md hidden-lg"><a href="{{ .Site.Data.settings.site_phone}}" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
-          <a href="mailto:{{ .Site.Data.settings.site_email}}" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
-          </p>
-      </div>
-      <div class="col-xs-7">
-        <div class="social">
-          {{ range .Site.Menus.topbar.ByWeight }}
-          {{ if ne .URL "" }}
-          <a href="{{ .URL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
-          {{ end }}
-          {{ end }}
+<div class="top-bar">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 d-md-block d-none">
+                <p>Contact us at <a href="tel:850-769-5067">850-769-5067</a>&nbsp;or <a href="mailto:office@olr.ptdiocese.org">office@olr.ptdiocese.org</a>.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-md-end justify-content-between">
+                    <ul class="list-inline contact-info d-block d-md-none">
+                        <li class="list-inline-item">
+                            <a href="tel:850-769-5067"><i class="fa fa-phone"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="mailto:office@olr.ptdiocese.org"><i class="fa fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="social-custom list-inline">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
-{{ end }}
