@@ -1,4 +1,4 @@
-{{ if and (eq .Params.alert "true") (isset .Params.alert_announcement) }}
+{{ if and (eq .Params.alert "true") (ne .Params.alert_announcement "" ) }}
 <section class="alert alert-warning alert-dismissible" data-pg-name="Alert">
     <div class="container">
         <div class="row">
