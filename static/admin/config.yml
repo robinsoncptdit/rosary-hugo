@@ -31,3 +31,22 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Email, name: site_email, widget: string}
           - {label: ChurchDB URL, name: site_churchDBURL, widget: string}
           - {label: eGiving URL, name: site_eGiving, widget: string}
+      - file: "data/mass_times.yaml"
+        label: "Mass Times"
+        name: "mass_times"
+        widget: "list"
+        fields:
+          - {label: Day, name: day, widget: string}
+          - {label: Time, name: time, widget: string}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/_index.md"
+        label: "Home Page"
+        name: "Home"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Welcome Message Heading, name: welcome_message_heading, widget: string}
+          - {label: Welcome Message, name: welcome_message, widget: text}
+          - {label: Welcome Message Button Text, name: welcome_message_button_text, widget: string}
+          - {label: Welcome Message Button Linkg, name: welcome_message_button_URL, widget: string}
