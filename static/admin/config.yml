@@ -24,7 +24,6 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Banner Background Image, name: jumbotron_bg_img, widget: image}
-          - {label: Banner Logo, name: Image, name: jumbotron_logo_img, widget: image}
           - {label: Show Alert, name: alert, widget: boolean, default: false}
           - {label: Alert Announcment, name: alert_announcement, widget:string}
           - {label: Welcome Message Heading, name: welcome_message_heading, widget: string}
