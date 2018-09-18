@@ -1,5 +1,2 @@
-title: mass_times
-id: mass_times
-mass_times:
-  - day: Sunday
-    time: 8:30 a.m. CT
+day: Sunday
+time: '11:00 a.m. CT'
