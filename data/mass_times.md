@@ -1,0 +1,9 @@
+---
+title: mass_times
+id: mass_times
+mass_times:
+  - day: Saturday
+    time: 4 p.m. CT
+  - day: Sunday
+    time: 8:30 a.m. CT
+---
