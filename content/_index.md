@@ -36,7 +36,7 @@ front_boxes:
     heading: Register
     url: .#
 front_more_heading: PARISH HALL RENTAL
-front_more_text:>-
+front_more_text: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet.
 front_more_button_text: Hall Rental Form
 front_more_button_url: /docs/RENTAL-form.pdf
@@ -45,6 +45,4 @@ front_last_heading:
 front_last_text:
 front_last_button_text:
 front_last_button_url:
-
-
 ---
