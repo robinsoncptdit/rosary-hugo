@@ -37,6 +37,7 @@ collections: # A list of collections the CMS should be able to edit
       - file: "data/mass_times.yaml"
         label: "Mass Times"
         name: "mass_times"
+        allow_add: true
         widget: "list"
         fields:
           - {label: Day, name: day, widget: string}
