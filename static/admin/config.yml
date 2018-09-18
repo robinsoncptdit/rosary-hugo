@@ -34,7 +34,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "mass_times"
     label: "Mass Times"
     files:
-      - file: "data/mass_times.md"
+      - file: "data/mass_times.yaml"
         label: "Mass Times"
         name: "mass_times"
         widget: "list"
