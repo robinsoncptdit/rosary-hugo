@@ -2,14 +2,14 @@
     <div class="container text-center-sm">
         <div class="row text-center center d-flex align-items-center">
             <div class="col-md-4 text-uppercase pb-4 pb-md-0">
-                <p> 5622 Julie Drive  <br>Highway 231 Bayou George <br>Panama City, FL 32404</p>
+                <p>{{ .Site.Data.settings.site_address }}<br>{{ .Site.Data.settings.site_city }}, {{ .Site.Data.settings.site_state }} {{ .Site.Data.settings.site_zip }}</p>
             </div>
             <div class="col-md-4">
-                <img src="img/olr-footer.png" alt="..." class="img-fluid">
+                <img src="{{ .Site.Data.settings.site_footer_img }}" alt="..." class="img-fluid">
             </div>
             <div class="col-md-4 text-uppercase pt-4 pt-md-0">
-                <p>Phone: (850) 769-5067<br>
-Fax: (850) 769-1227</p>
+                <p>Phone: {{ .Site.Data.settings.site_phone }}<br>
+Fax: {{ .Site.Data.settings.site_fax }}</p>
             </div>
         </div>
     </div>

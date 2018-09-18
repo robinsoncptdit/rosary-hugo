@@ -44,6 +44,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Front Section 2 Button Link, name: front_more_button_url, widget: string}
           - {label: Front Last Background Image, name: front_last_bg_img, widget: image}
           - {label: Front Last Heading, name: front_last_heading, widget: string}
+          - {label: Front Last Text Lead, name: front_last_text_lead, widget: string}
           - {label: Front Last Text, name: front_last_text, widget: string}
           - {label: Front Last Button Text, name: front_last_button_text, widget: string}
           - {label: Front Last Button Link, name: front_last_button_url, widget: string}
@@ -75,7 +76,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Site City, name: site_city, widget: string}
           - {label: Site State, name: site_state, widget: string}
           - {label: Site Zip, name: site_zip, widget: string}
-          - {label: Phone Number 1-XXX-XXX-XXXX, name: site_phone, widget: string}
+          - {label: Phone Number (XXX) XXX-XXXX, name: site_phone, widget: string}
+          - {label: Fax Number (XXX) XXX-XXXX, name: site_fax, widget: string}
           - {label: Email, name: site_email, widget: string}
           - {label: ChurchDB URL, name: site_churchDBURL, widget: string}
           - {label: eGiving URL, name: site_eGiving, widget: string}
+          - {label: Site Footer Image, name: site_footer_img, widget: image}

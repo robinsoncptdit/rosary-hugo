@@ -1,14 +1,14 @@
-<section style="background: url(img/ol-heaven.jpeg) center top no-repeat;
+<section style="background: url({{ .Params.front_last_bg_img}}) center top no-repeat;
 background-size: cover;
 background-position: 50% 35%;" class="no-mb color-white text-center box-image no-mt" data-pg-name="Section">
     <div class="d-flex align-items-center justify-content-center overlay">
         <div class="p-sm-5 pt-5 pb-5">
             <div class="heading text-center">
-                <h2>Our Lady Queen of Peace</h2>
+                <h2>{{ .Params.front_last_heading }}</h2>
             </div>
-            <p class="lead mb-small">Learn about our Mission Parish in Fountain, FL</p>
-            <p class="mb-small">Our Lady Queen of Peace is a strong community in Fountain, FL that Fr. Brown serves. We would love for you to visit if you are interested in becoming a part of this tight-knit community.</p>
-            <p><a class="btn btn-template-outlined-white" href="queenofpeace.html" target="_blank">View Mass Schedule</a></p>
+            <p class="lead mb-small">{{ .Params.front_last_text_lead }}</p>
+            <p class="mb-small">{{ .Params.front_last_text }}</p>
+            <p><a class="btn btn-template-outlined-white" href="{{ .Params.front_last_button_url}}" target="_blank">{{ .Params.front_last_button_text}}</a></p>
         </div>
     </div>
 </section>
