@@ -1,5 +1,7 @@
-mass-times:
+mass_times:
   - day: Saturday
-    time: 10 am
+    time: 4 p.m. CT
   - day: Sunday
-    time: 5 pm
+    time: 8:30 a.m. CT
+  - day: Monday - Thursday
+    time: 8:30 a.m. CT

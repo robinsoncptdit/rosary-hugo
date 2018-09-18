@@ -58,7 +58,7 @@ collections: # A list of collections the CMS should be able to edit
         create: true
         fields:
           - label: "Mass Times"
-            name: "mass-times"
+            name: "mass_times"
             create: true
             widget: list
             fields:
