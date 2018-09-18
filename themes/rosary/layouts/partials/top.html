@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-md-6 d-md-block d-none">
-                <p>Contact us at {{ .Site.Data.settings.site_phone | safeHTML}}&nbsp;or {{ .Site.Data.settings.site_email | safeHTML}}.</p>
+                <p>Contact us at <a href="{{ .Site.Data.settings.site_phone | safeHTML}}">{{ .Site.Data.settings.site_phone | safeHTML}}</a>&nbsp;or <a href="{{ .Site.Data.settings.site_email | safeHTML}}">{{ .Site.Data.settings.site_email | safeHTML}}.</p>
             </div>
             <div class="col-md-6">
                 <div class="d-flex justify-content-md-end justify-content-between">
@@ -19,7 +19,7 @@
                       {{ range .Site.Menus.topbar.ByWeight }}
                         {{ if ne .URL "" }}
                         <li class="list-inline-item">
-                            <a href="{{ .URL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
+                            <a href="{{ .URL }}" target="_blank">{{ .Pre }}</a>
                         </li>
                         {{ end }}
                       {{ end }}
