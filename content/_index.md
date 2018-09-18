@@ -15,13 +15,6 @@ welcome_message: >-
   We would love for you to join us for Mass this weekend.
 welcome_message_button_text: Get Directions
 welcome_message_button_URL: https://goo.gl/maps/94Ch96w6S6M2
-mass_times:
-  - day: Saturday
-    time: 4 p.m. CT
-  - day: Sunday
-    time: 8:30 a.m. CT
-  - day: Monday - Thursday
-    time: 8:30 a.m. CT
 front_boxes:
   - icon: fa fa-bell-o
     heading: Sacraments

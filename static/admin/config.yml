@@ -15,22 +15,6 @@ collections: # A list of collections the CMS should be able to edit
   #    - {label: "Image", name: "banner", widget: "image", required: false}
   #    - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "data"
-    label: "Settings"
-    files:
-      - file: "data/settings.yaml"
-        label: "Site Settings"
-        name: "site_settings"
-        fields:
-          - {label: Site Title, name: site_title, widget: string}
-          - {label: Site Address, name: site_address, widget: string}
-          - {label: Site City, name: site_city, widget: string}
-          - {label: Site State, name: site_state, widget: string}
-          - {label: Site Zip, name: site_zip, widget: string}
-          - {label: Phone Number 1-XXX-XXX-XXXX, name: site_phone, widget: string}
-          - {label: Email, name: site_email, widget: string}
-          - {label: ChurchDB URL, name: site_churchDBURL, widget: string}
-          - {label: eGiving URL, name: site_eGiving, widget: string}
   - name: "pages"
     label: "Pages"
     files:
@@ -39,16 +23,31 @@ collections: # A list of collections the CMS should be able to edit
         name: "Home"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Banner Background Image, name: jumbotron_bg_img, widget: image}
+          - {label: Banner Logo, name: Image, name: jumbotron_logo_img, widget: image}
+          - {label: Show Alert, name: alert, widget: boolean, default: false}
+          - {label: Alert Announcment, name: alert_announcement, widget:string}
           - {label: Welcome Message Heading, name: welcome_message_heading, widget: string}
           - {label: Welcome Message, name: welcome_message, widget: text}
           - {label: Welcome Message Button Text, name: welcome_message_button_text, widget: string}
-          - {label: Welcome Message Button Linkg, name: welcome_message_button_URL, widget: string}
-          - label: "Mass Times"
-            name: "mass_times"
+          - {label: Welcome Message Button Link, name: welcome_message_button_URL, widget: string}
+          - label: "Front Boxes"
+            name: "front_boxes"
             widget: list
             fields:
-                - {label: Day, name: day, widget: string}
-                - {label: Time, name: time, widget: string}
+              - {label: Icon, name: icon, widget: string}
+              - {label: Heading, name: heading, widget: string}
+              - {label: Link, name: url, widget: string}
+          - {label: Front Section 2 Heading, name: front_more_heading, widget: string}
+          - {label: Front Section 2 Text, name: front_more_text, widget: string}
+          - {label: Front Section 2 Button Text, name: front_more_button_text, widget: string}
+          - {label: Front Section 2 Button Link, name: front_more_button_url, widget: string}
+          - {label: Front Last Background Image, name: front_last_bg_img, widget: image}
+          - {label: Front Last Heading, name: front_last_heading, widget: string}
+          - {label: Front Last Text, name: front_last_text, widget: string}
+          - {label: Front Last Button Text, name: front_last_button_text, widget: string}
+          - {label: Front Last Button Link, name: front_last_button_url, widget: string}
+
   - name: "masses"
     label: "Masses"
     files:
@@ -64,3 +63,19 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Day, name: day, widget: string}
               - {label: Time, name: time, widget: string}
+- name: "data"
+  label: "Settings"
+  files:
+    - file: "data/settings.yaml"
+      label: "Site Settings"
+      name: "site_settings"
+      fields:
+        - {label: Site Title, name: site_title, widget: string}
+        - {label: Site Address, name: site_address, widget: string}
+        - {label: Site City, name: site_city, widget: string}
+        - {label: Site State, name: site_state, widget: string}
+        - {label: Site Zip, name: site_zip, widget: string}
+        - {label: Phone Number 1-XXX-XXX-XXXX, name: site_phone, widget: string}
+        - {label: Email, name: site_email, widget: string}
+        - {label: ChurchDB URL, name: site_churchDBURL, widget: string}
+        - {label: eGiving URL, name: site_eGiving, widget: string}
