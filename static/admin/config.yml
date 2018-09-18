@@ -35,7 +35,7 @@ collections: # A list of collections the CMS should be able to edit
             name: "front_boxes"
             widget: list
             fields:
-              - {label: Heading, name: heading, widget: string}
+              - {label: Headings, name: heading, widget: string}
               - {label: Link, name: url, widget: string}
               - {label: Icon, name: icon, widget: string}
           - {label: Front Section 2 Heading, name: front_more_heading, widget: string}
