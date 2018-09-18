@@ -4,10 +4,10 @@ id: home
 heading:
 subtitle:
 heading_img:
-jumbotron_bg_img:
-jumbotron_logo_img:
+jumbotron_bg_img: img/holyrosary.jpg
+jumbotron_logo_img: img/olr-logo.png
 alert_announcement:
-alert:
+alert: false
 welcome_message_heading: WELCOME TO OUR PARISH
 welcome_message: >-
   We, the parish community of Our Lady of the Rosary Catholic Church in Panama City, Florida, seek to improve our efforts to reach out to all of God`s children; to continue to foster a people friendly and supportive environment; and to accomplish all of this without sacrificing the close knit community feeling that personifies our Parish
