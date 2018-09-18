@@ -1,6 +1,7 @@
 ---
 title: Home
 jumbotron_bg_img: img/holyrosary.jpg
+jumbotron_logo_img: img/olr-logo.png
 alert: true
 alert_announcement: Hi mom
 welcome_message_heading: WELCOME TO OUR PARISH
@@ -40,4 +41,3 @@ front_last_text: Mot
 front_last_button_text: Mo
 front_last_button_url: '#'
 ---
-
