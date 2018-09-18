@@ -33,6 +33,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: eGiving URL, name: site_eGiving, widget: string}
   - name: "mass_times"
     label: "Mass Times"
+    files:
       - file: "data/mass_times.yaml"
         label: "Mass Times"
         name: "mass_times"
