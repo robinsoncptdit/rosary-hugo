@@ -49,3 +49,18 @@ collections: # A list of collections the CMS should be able to edit
             fields:
                 - {label: Day, name: day, widget: string}
                 - {label: Time, name: time, widget: string}
+  - name: "masses"
+    label: "Masses"
+    files:
+      - file: "data/mass_times.yaml"
+        label: "Mass Times"
+        name: "mass_times"
+        create: true
+        fields:
+          - label: "Mass Times"
+            name: "mass-times"
+            create: true
+            widget: list
+            fields:
+              - {label: Day, name: day, widget: string}
+              - {label: Time, name: time, widget: string}

@@ -1,0 +1,5 @@
+mass_times:
+  - day: Saturday
+    time: 10 am
+  - day: Sunday
+    time: 11 am
