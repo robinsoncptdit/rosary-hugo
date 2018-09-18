@@ -31,6 +31,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Email, name: site_email, widget: string}
           - {label: ChurchDB URL, name: site_churchDBURL, widget: string}
           - {label: eGiving URL, name: site_eGiving, widget: string}
+  - name: "mass_times"
+    label: "Mass Times"
       - file: "data/mass_times.yaml"
         label: "Mass Times"
         name: "mass_times"
