@@ -5,7 +5,7 @@
                 <p>{{ .Site.Data.settings.site_address }}<br>{{ .Site.Data.settings.site_city }}, {{ .Site.Data.settings.site_state }} {{ .Site.Data.settings.site_zip }}</p>
             </div>
             <div class="col-md-4">
-                <img src="{{ .Site.Data.settings.site_footer_img }}" alt="..." class="img-fluid">
+                <img src="{{ .Site.BaseURL }}{{ .Site.Data.settings.site_footer_img }}" alt="..." class="img-fluid">
             </div>
             <div class="col-md-4 text-uppercase pt-4 pt-md-0">
                 <p>Phone: {{ .Site.Data.settings.site_phone }}<br>
