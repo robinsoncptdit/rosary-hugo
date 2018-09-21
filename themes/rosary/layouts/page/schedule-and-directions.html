@@ -34,22 +34,24 @@
                                   </ul>
                                   <div id="pills-tabContent" class="tab-content">
                                       <div id="pills-mass" role="tabpanel" aria-labelledby="pills-home-tab" class="tab-pane fade show active">
-                                          <h3>Saturday</h3>
-                                          <p class="lead">4 p.m.</p>
-                                          <h3>Sunday</h3>
-                                          <p class="lead">8:30 a.m.</p>
-                                          <h3>Monday-Thursday</h3>
-                                          <p class="lead">8:30 a.m.</p>
+                                        {{ range $index, $element := .Site.Data.schedule.mass_times }}
+                                          <h3>{{ .day }}</h3>
+                                          <p class="lead">{{ .time }}</p>
+                                        {{ end }}
                                           <p>Please check bulletin for changes to daily mass times</p>
                                       </div>
                                       <div id="pills-confession" role="tabpanel" aria-labelledby="pills-profile-tab" class="tab-pane fade">
-                                          <h3>Saturday</h3>
-                                          <p class="lead">3 p.m.</p>
+                                        {{ range $index, $element := .Site.Data.schedule.confession }}
+                                          <h3>{{ .day }}</h3>
+                                          <p class="lead">{{ .time }}</p>
+                                        {{ end }}
                                           <p>or by appointment</p>
                                       </div>
                                       <div id="pills-adoration" role="tabpanel" aria-labelledby="pills-profile-tab" class="tab-pane fade">
-                                          <h3>Monday</h3>
-                                          <p class="lead">9 - 10:30 a.m.</p>
+                                        {{ range $index, $element := .Site.Data.schedule.adoration }}
+                                          <h3>{{ .day }}</h3>
+                                          <p class="lead">{{ .time }}</p>
+                                        {{ end }}
                                       </div>
                                   </div>
                               </div>

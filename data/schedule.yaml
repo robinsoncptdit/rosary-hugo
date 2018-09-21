@@ -5,3 +5,9 @@ mass_times:
     time: 8:30 a.m. CT
   - day: Monday - Thursday
     time: 8:30 a.m. CT
+confession:
+  - day: Saturday
+    time: 3pm
+adoration:
+  - day: Monday
+    time: 9am to 10:30am
