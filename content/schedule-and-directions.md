@@ -1,4 +1,4 @@
 ---
-title: Schedule and Directions
-
+title: "schedule and directions"
+layout: schedule-and-directions"
 ---
