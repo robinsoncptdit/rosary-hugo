@@ -4,10 +4,10 @@
             <h3 class="no-mb">Mass Times</h3>
         </div>
         <div class="box-simple">
-          {{ range $index, $element := .Site.Data.mass_times.mass_times }}
+          {{ range $index, $element := .Site.Data.schedule.mass_times }}
             <h4>{{ .day }}</h4>
             <p>{{ .time }}</p>
-          {{ end }}  
+          {{ end }}
         </div>
     </div>
 </div>
