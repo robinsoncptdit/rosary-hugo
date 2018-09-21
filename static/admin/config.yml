@@ -48,6 +48,25 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Front Last Text, name: front_last_text, widget: string}
           - {label: Front Last Button Text, name: front_last_button_text, widget: string}
           - {label: Front Last Button Link, name: front_last_button_url, widget: string}
+      - file: "content/contact.md"
+        label: "Contact Us"
+        name: "contact"
+        fields:
+          - {label: Contact Us, name: title, widget: string}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Top Content Heading, name: top_content_heading, widget: string}
+          - {label: Top Content, name: top_content, widget: string}
+          - {label: Staff Heading, name: staff_heading, widget: string}
+          - {label: Staff Text, name: staff_subtext, widget: text}
+          - label: "Staff"
+            name: "staff"
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: Contact Info, name: contact, widget: string}
+              - {label: Image, name: img, widget: image}
+
 
   - name: "masses"
     label: "Masses"
