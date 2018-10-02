@@ -3,7 +3,7 @@ title: Home
 jumbotron_bg_img: img/holyrosary.jpg
 jumbotron_logo_img: /img/olr-logo.png
 alert: true
-alert_announcement: Hi mom
+alert_announcement: Important announcement
 welcome_message_heading: WELCOME TO OUR PARISH
 welcome_message: >-
   We, the parish community of Our Lady of the Rosary Catholic Church in Panama
