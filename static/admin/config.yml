@@ -21,6 +21,7 @@ collections: # A list of collections the CMS should be able to edit
       - file: "content/bulletins/_index.md"
         label: "Bulletin"
         name: "bulletin"
+        create: true
         fields:
           - {label: Title, name: title, widget: string}
           - {label: File, name: src, widget: file}
