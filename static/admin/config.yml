@@ -91,6 +91,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Bulletin"
         name: "bulletin"
         create: true
+        allow_add: true
         widget: list
         fields:
           - {label: Title, name: title, widget: string}
