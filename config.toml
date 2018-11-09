@@ -96,8 +96,9 @@ paginate = 10
         <br>Office Hours: Please call
       </p>
       """ #change
-    latitude = "29.724651" # find in Google maps and put here
-    longitude = "-84.984422"
+    latitude = "30.246317" # find in Google maps and put here
+    longitude = "-85.564166"
+    direction = ""
 
 [Permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
