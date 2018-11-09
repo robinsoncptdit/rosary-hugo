@@ -93,7 +93,7 @@ collections: # A list of collections the CMS should be able to edit
         create: true
           fields:
             - {label: Title, name: title, widget: string}
-            - {label: File, name: src, widget: file, default: "/content/bulletins"}
+            - {label: File, name: src, widget: file, default: "/content/bulletins/bull1.pdf"}
   - name: "data"
     label: "Settings"
     files:
