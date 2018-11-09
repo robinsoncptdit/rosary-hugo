@@ -1,5 +1,6 @@
 ---
 title: Contact Us
+layout: "contact"
 heading: Contact Us
 top_content_heading: WE ARE HERE TO HELP YOU
 top_content: >-
@@ -27,4 +28,3 @@ staff:
     name: Fr. John
     title: Pastor
 ---
-
