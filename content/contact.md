@@ -18,5 +18,9 @@ staff:
   - name: Fr. John
     title: Pastor
     contact: frjohn@gmail.com
-    img: /img/person-1.jpg    
+    img: /img/person-1.jpg
+  - name: Fr. John
+    title: Pastor
+    contact: frjohn@gmail.com
+    img: /img/person-1.jpg     
 ---
