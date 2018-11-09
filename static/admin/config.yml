@@ -15,6 +15,11 @@ collections: # A list of collections the CMS should be able to edit
   #    - {label: "Image", name: "banner", widget: "image", required: false}
   #    - {label: "Body", name: "body", widget: "markdown"}
 
+  - name: "bulletins"
+    label: "Bulletins"
+    widget: "file"
+    default: "content/bulletins"
+
   - name: "pages"
     label: "Pages"
     files:
@@ -102,7 +107,3 @@ collections: # A list of collections the CMS should be able to edit
           - {label: ChurchDB URL, name: site_churchDBURL, widget: string}
           - {label: eGiving URL, name: site_eGiving, widget: string}
           - {label: Site Footer Image, name: site_footer_img, widget: image}
-  - name: "bulletins"
-    label: "Bulletins"
-    widget: "file"
-    default: "content/bulletins"
