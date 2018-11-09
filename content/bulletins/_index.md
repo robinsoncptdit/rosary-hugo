@@ -1,5 +1,5 @@
 ---
-title: Some file
-filename: /img/amazon.com-order-111-1178095-3964245.pdf
+title: Next File
+filename: /img/cd-wireframe.pdf
 ---
 
