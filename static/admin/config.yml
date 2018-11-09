@@ -87,7 +87,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "bulletins"
     label: "Bulletins"
     files:
-      - file: "content/bulletins/_index.md"
+      - file: "content/bulletins/bulletins.yaml"
         label: "Bulletin"
         name: "bulletin"
         create: true
