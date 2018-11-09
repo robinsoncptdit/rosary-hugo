@@ -15,16 +15,6 @@ collections: # A list of collections the CMS should be able to edit
   #    - {label: "Image", name: "banner", widget: "image", required: false}
   #    - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "bulletins"
-    label: "Bulletins"
-    files:
-      - file: "content/bulletins/_index.md"
-        label: "Bulletin"
-        name: "bulletin"
-        create: true
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: File, name: src, widget: file}
   - name: "pages"
     label: "Pages"
     files:
@@ -94,6 +84,16 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Day, name: day, widget: string}
               - {label: Time, name: time, widget: string}
+  - name: "bulletins"
+    label: "Bulletins"
+    files:
+      - file: "content/bulletins/_index.md"
+        label: "Bulletin"
+        name: "bulletin"
+        create: true
+          fields:
+            - {label: Title, name: title, widget: string, default: "/content/bulletins"}
+            - {label: File, name: src, widget: file}
   - name: "data"
     label: "Settings"
     files:
