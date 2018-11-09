@@ -21,9 +21,9 @@ collections: # A list of collections the CMS should be able to edit
       - file: "content/bulletins/_index.md"
         label: "Bulletin"
         name: "bulletin"
-        widget: "file"
-        default: "content/bulletins"
-
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: File, name: src, widget: file}
   - name: "pages"
     label: "Pages"
     files:
