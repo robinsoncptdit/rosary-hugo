@@ -91,11 +91,10 @@ collections: # A list of collections the CMS should be able to edit
         label: "Bulletin"
         name: "bulletin"
         create: true
-        widget: file
-        default: "/content/bulletins/bull1.pdf"
+        widget: list
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: File, name: filename, widget: file}
+          - {label: File, name: src, widget: file, default: /content/bulletins/bull1.pdf}
   - name: "data"
     label: "Settings"
     files:
