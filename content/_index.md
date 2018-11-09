@@ -30,6 +30,7 @@ front_boxes:
     icon: fa fa-user-plus
     url: '.#'
 front_more_heading: PARISH HALL RENTAL
+front_more_img: img/parish-hall.jpg
 front_more_text: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar
   faucibus neque, nec rhoncus nunc ultrices sit amet.
@@ -44,4 +45,3 @@ front_last_text: >-
 front_last_button_text: View Mass Schedule
 front_last_button_url: '#'
 ---
-
