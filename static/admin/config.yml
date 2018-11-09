@@ -17,8 +17,12 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "bulletins"
     label: "Bulletins"
-    widget: "file"
-    default: "content/bulletins"
+    files:
+      - file: "content/bulletins/_index.md"
+        label: "Bulletin"
+        name: "bulletin"
+        widget: "file"
+        default: "content/bulletins"
 
   - name: "pages"
     label: "Pages"
