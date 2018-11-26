@@ -1,41 +1,48 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html>
+    {{ partial "head.html" . }}
+    <body>
+        <div id="all">
+            <!-- Top bar-->
+            {{ partial "top.html" . }}
+            <!-- Top bar end-->
+            <!-- Login Modal-->
 
-  {{ partial "head.html" . }}
+            <!--{{ partial "login_modal.html" . }}-->
 
-  <body>
+            {{ partial "nav.html" . }}
 
-    <div id="all">
+            <!-- end BLOCK MAIN -->
 
-        <header>
+            {{ partial "jumbotron.html" . }}
 
-          {{ partial "top.html" . }}
+            {{ partial "announcement.html" . }}
 
-          {{ partial "nav.html" . }}
+            <section class="bar bg-white">
+                <div class="container">
+                    <div class="row">
+                        {{ partial "welcome_message.html" . }}
+                        {{ partial "mass_times.html" . }}
+                    </div>
+                </div>
+            </section>
+            {{ partial "front_boxes.html" . }}
+            <!-- GET IT-->
 
-        </header>
+            {{ partial "front_more.html" . }}
 
-        {{ partial "bigblock.html" . }}
+            {{ partial "front_last.html" . }}
 
-        <!-- {{ partial "carousel.html" . }}-->
+            <!-- FOOTER -->
 
-        {{ partial "features.html" . }}
+            {{ partial "footer.html" . }}
 
+        </div>
+        <!-- Javascript files-->
 
-        {{ partial "middle_blurb.html" . }}
+        {{ partial "footer_js_inc.html" . }}
 
-        <!-- {{ partial "recent_posts.html" . }} -->
-
-
-{{ partial "parish-schedule.html" . }}
-
-        {{ partial "footer.html" . }}
-
-    </div>
-    <!-- /#all -->
-
-    {{ partial "scripts.html" . }}
-    <script>
+        <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
       if (!user) {
@@ -47,5 +54,5 @@
   }
 </script>
 
-  </body>
+    </body>
 </html>

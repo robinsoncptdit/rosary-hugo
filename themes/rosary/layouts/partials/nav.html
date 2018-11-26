@@ -1,63 +1,44 @@
-<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
-
-    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
-
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand home" href="{{ .Site.BaseURL }}">
-                    <!--<img src="{{ .Site.BaseURL }}img/Artboard-1.svg" alt="{{ .Title }} logo" class="hidden-xs hidden-sm">
-                    <img src="{{ .Site.BaseURL }}img/Artboard-1.svg" alt="{{ .Title }} logo" class="visible-xs visible-sm">-->
-                    {{.Site.Data.settings.site_title}}
-                </a>
-                <div class="navbar-buttons">
-                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
-                      <span class="sr-only">{{ i18n "navToggle" }}</span>
-                        <i class="fa fa-align-justify"></i>
-                    </button>
+<header class="make-sticky nav-holder">
+<div id="navbar" role="navigation" class="navbar navbar-expand-lg">
+    <div class="container">
+        <a href="index.html" class="navbar-brand home">
+            <img alt="Our Lady of the Rosary Logo" class="d-inline-block d-md-none" src="/img/logo-nav.png"/>
+            <span class="sr-only">Our Lady of the Rosary Catholic Church - go to homepage</span>
+        </a>
+        <button type="button" data-toggle="collapse" data-target="#navigation" class="btn-template-outlined navbar-toggler">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa-align-justify fa"></i>
+        </button>
+        <div id="navigation" class="navbar-collapse">
+            <ul class="navbar-nav nav m-auto" style="padding-bottom: 0;">
+                <li class="nav-item">
+                    <a href="/" target="_self">Home <b class="caret"></b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/schedule-and-directions" target="_self">Schedule<b class="caret"></b></a>
+                </li>
+                <!-- ========== FULL WIDTH MEGAMENU ==================-->
+                <!-- ========== FULL WIDTH MEGAMENU END ==================-->
+                <!-- ========== Contact dropdown ==================-->
+                <li class="nav-item">
+                    <a href="/contact" target="_self">Contact <b class="caret"></b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.eservicepayments.com/cgi-bin/Vanco_ver3.vps?appver3=Fi1giPL8kwX_Oe1AO50jRpD4Ri1ipMz8SjtO-fInVtuhjXsUKRLlmI4vCU4-rZZZ2EvVVAEjqawDomKT1pbouYCLiHsYNviTLNfVAvw7pMg=&ver=3" target="_blank">Give<b class="caret"></b></a>
+                </li>
+                <!-- ========== Contact dropdown end ==================-->
+            </ul>
+        </div>
+        <div id="search" class="collapse clearfix">
+            <form role="search" class="navbar-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Search" class="form-control">
+                    <span class="input-group-btn"> <button type="submit" class="btn btn-template-main">
+                            <i class="fa fa-search"></i>
+                        </button></span>
                 </div>
-            </div>
-            <!--/.navbar-header -->
-
-            <div class="navbar-collapse collapse" id="navigation">
-                <ul class="nav navbar-nav navbar-right">
-                  {{ range .Site.Menus.main }}
-                  <li class="dropdown">
-                    {{ if .HasChildren }}
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      {{ range .Children }}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                      {{ end }}
-                    </ul>
-                    {{ else }}
-                    <a href="{{ .URL }}">{{ .Name }}</a>
-                    {{ end  }}
-                  </li>
-                  {{ end }}
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-
-            <div class="collapse clearfix" id="search">
-
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-btn">
-
-                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
-
-                </span>
-                    </div>
-                </form>
-
-            </div>
-            <!--/.nav-collapse -->
-
+            </form>
         </div>
     </div>
-    <!-- /#navbar -->
-
 </div>
-
-<!-- *** NAVBAR END ***-->
+</header>

@@ -1,0 +1,13 @@
+mass_times:
+  - day: Saturday
+    time: 4 p.m. CT
+  - day: Sunday
+    time: 8:30 a.m. CT
+  - day: Monday - Thursday
+    time: 8:30 a.m. CT
+confession:
+  - day: Saturday
+    time: 3pm
+adoration:
+  - day: Monday
+    time: 9am to 10:30am
