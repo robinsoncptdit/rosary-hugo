@@ -86,16 +86,13 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Time, name: time, widget: string}
   - name: "bulletins"
     label: "Bulletins"
-    files:
-      - file: "content/bulletins/bulletins.yaml"
-        label: "Bulletin"
-        name: "bulletin"
-        create: true
-        allow_add: true
-        widget: list
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: File, name: src, widget: file, default: /content/bulletins/bull1.pdf}
+    folder: "content/bulletin"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Bulletin PDF", name: "bulletin_pdf", widget: "file", default: "/uploads/bulletin.pdf"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "data"
     label: "Settings"
     files:
