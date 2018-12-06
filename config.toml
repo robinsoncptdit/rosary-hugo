@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "rosary-hugo.netlify.com" #CHANGE!!!
 languageCode = "en-us"
 title = "Our Lady of the Rosary Catholic Church - Panama City, FL"
 theme = "rosary"
