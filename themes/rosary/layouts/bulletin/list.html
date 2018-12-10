@@ -78,7 +78,7 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-12">
                             <!--INSERT CONTENT HERE-->
-                            <ul>
+                          <!--  <ul>
                             {{ $paginator := .Paginate (where .Data.Pages "Type" "bulletin") }}
                             {{ range $paginator.Pages }}
                               <li><a href="{{ .Params.bulletin_pdf | relURL }}">{{ .Title }}</a></li>
