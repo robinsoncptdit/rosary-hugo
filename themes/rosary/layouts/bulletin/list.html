@@ -27,16 +27,52 @@
                       </div>
                   </div>
               </div>
-          <div id="content">
-              <div id="contact" class="container">
-                  <section class="bar">
+
+<!-- THIS IS THE REAL -->
+
+<div id="content">
+    <div class="container">
+        <section>
+            <div class="row">
+
+                <div class="col-md-12 clearfix">
+
+                    <div id="text-page">
+                      <div class="heading">
+                          <h2>Bulletins</h2>
+                      </div>
+                      <ul>
+                      {{ $paginator := .Paginate (where .Data.Pages "Type" "bulletin") }}
+                      {{ range $paginator.Pages }}
+                        <li><a href="{{ .Params.bulletin_pdf | relURL }}">{{ .Title }}</a></li>
+                      {{ end }}
+                    </ul>
+
+
+                    </div>
+
+
+                </div>
+                <!-- /.col-md-12 -->
+            </div>
+            <!-- /.row -->
+        </section>
+    </div>
+    <!-- /.container -->
+</div>
+
+<!-- END REAL -->
+
+
+        <!--  <div id="content">
+              <div class="container">
+                  <section>
                       <div class="row">
-                          <div class="col-md-12 col-lg-12">
+                          <div class="col-md-12 clearfix">
+                            <div id="text-page">
                               <div class="heading">
                                   <h2>Bulletins</h2>
                               </div>
-                          </div>
-                      </div>
                   </section>
                   <section>
                     <div class="row">
@@ -51,9 +87,11 @@
                         </div>
                     </div>
                   </section>
+                </div>
               </div>
-
-          </div>
+              </div>
+            </div>
+          </div>-->
           <!-- GET IT-->
 
           <!-- FOOTER -->
