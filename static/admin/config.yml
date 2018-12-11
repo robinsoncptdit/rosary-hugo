@@ -113,15 +113,15 @@ collections: # A list of collections the CMS should be able to edit
           - {label: ChurchDB URL, name: site_churchDBURL, widget: string}
           - {label: eGiving URL, name: site_eGiving, widget: string}
           - {label: Site Footer Image, name: site_footer_img, widget: image}
-          - label: "menu"
+          - label: "menus"
             name: "menu"
             widget: "object"
             fields:
-              - label: "topbar"
+              - label: "Social Media"
                 name: "topbar"
                 widget: "list"
                 fields:
-                - {label: weight, name: weight, widget: text }
-                - {label: name, name: name, widget: text}
-                - {label: url, name: url, widget: text}
-                - {label: pre, name: pre, widget: text}
+                - {label: weight, name: weight, widget: string }
+                - {label: name, name: name, widget: string}
+                - {label: url, name: url, widget: string}
+                - {label: pre, name: pre, widget: string}
