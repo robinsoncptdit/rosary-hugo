@@ -37,12 +37,12 @@ front_more_text: >-
 front_more_button_text: Hall Rental Form
 front_more_button_url: /docs/RENTAL-form.pdf
 front_last_bg_img: img/ol-heaven.jpeg
-front_last_heading: 'No'
+front_last_heading: ANOTHER HEADER
 front_last_text_lead: 'Learn about our Mission Parish in Fountain, FL'
 front_last_text: >-
   Our Lady Queen of Peace is a strong community in Fountain, FL that Fr. Brown
   serves. We would love for you to visit if you are
 front_last_button_text: View Mass Schedule
-front_last_button_url: '#'
+front_last_button_url: /schedule-and-directions/
 ---
 
