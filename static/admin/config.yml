@@ -121,7 +121,7 @@ collections: # A list of collections the CMS should be able to edit
                 name: "topbar"
                 widget: "list"
                 fields:
-                - {label: weight, name: weight, widget: string }
                 - {label: name, name: name, widget: string}
+                - {label: weight, name: weight, widget: string }
                 - {label: url, name: url, widget: string}
                 - {label: pre, name: pre, widget: string}
