@@ -21,7 +21,7 @@
                                   <li class="breadcrumb-item">
                                       <a href="index.html">Home</a>
                                   </li>
-                                  <li class="breadcrumb-item active">Bulletins}</li>
+                                  <li class="breadcrumb-item active">Bulletins</li>
                               </ul>
                           </div>
                       </div>
@@ -37,11 +37,11 @@
 
                 <div class="col-md-12 clearfix">
                     <div id="text-page">
-                      <section class="bar">
+
                       <div class="heading">
                           <h2>Bulletins</h2>
                       </div>
-                    </section>
+                    
                       <ul>
                       {{ $paginator := .Paginate (where .Data.Pages "Type" "bulletin") }}
                       {{ range $paginator.Pages }}
