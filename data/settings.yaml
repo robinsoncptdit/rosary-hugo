@@ -21,11 +21,11 @@ menu:
       pre: <i class='fa fa-twitter'></i>
       url: 'https://www.twitter.com'
       weight: 2
-    - name: Email
-      pre: <i class='fa fa-envelope'></i>
-      url: 'mailto:office@olr.ptdiocese.org'
-      weight: 3
     - name: Instagram
       pre: <i class='fa fa-instagram'></i>
       url: 'https://www.instagram.com'
       weight: '4'
+    - name: Email
+      pre: <i class='fa fa-envelope'></i>
+      url: 'mailto:office@olr.ptdiocese.org'
+      weight: 3
