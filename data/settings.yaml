@@ -16,16 +16,12 @@ menu:
     - name: Facebook
       pre: <i class='fa fa-facebook'></i>
       url: 'https://www.facebook.com'
-      weight: 1
     - name: Twitter
       pre: <i class='fa fa-twitter'></i>
       url: 'https://www.twitter.com'
-      weight: 2
     - name: Instagram
       pre: <i class='fa fa-instagram'></i>
       url: 'https://www.instagram.com'
-      weight: '4'
     - name: Email
       pre: <i class='fa fa-envelope'></i>
       url: 'mailto:office@olr.ptdiocese.org'
-      weight: 3
