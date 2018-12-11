@@ -13,15 +13,19 @@ site_eGiving: >-
 site_footer_img: img/olr-footer.png
 menu:
   topbar:
-    - weight: 1
-      name: Facebook
-      url: 'https://www.facebook.com'
+    - name: Facebook
       pre: <i class='fa fa-facebook'></i>
-    - weight: 2
-      name: Twitter
-      url: 'https://www.twitter.com'
+      url: 'https://www.facebook.com'
+      weight: 1
+    - name: Twitter
       pre: <i class='fa fa-twitter'></i>
-    - weight: 3
-      name: Email
-      url: 'mailto:office@olr.ptdiocese.org'
+      url: 'https://www.twitter.com'
+      weight: 2
+    - name: Email
       pre: <i class='fa fa-envelope'></i>
+      url: 'mailto:office@olr.ptdiocese.org'
+      weight: 3
+    - name: Instagram
+      pre: <i class='fa fa-instagram'></i>
+      url: 'https://www.instagram.com'
+      weight: '4'
