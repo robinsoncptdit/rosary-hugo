@@ -36,12 +36,12 @@
             <div class="row">
 
                 <div class="col-md-12 clearfix">
-                    <div id="text-page">
-
+                    <div id="text-page" style="padding: 75px 0;">
+                      <section>
                       <div class="heading">
                           <h2>Bulletins</h2>
                       </div>
-                    
+                    </section>
                       <ul>
                       {{ $paginator := .Paginate (where .Data.Pages "Type" "bulletin") }}
                       {{ range $paginator.Pages }}
