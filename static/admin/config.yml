@@ -112,5 +112,16 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Email, name: site_email, widget: string}
           - {label: ChurchDB URL, name: site_churchDBURL, widget: string}
           - {label: eGiving URL, name: site_eGiving, widget: string}
-          - {label: Facebook URL, name: menu.topbar.url, widget: string}
           - {label: Site Footer Image, name: site_footer_img, widget: image}
+          - label: "menu"
+            name: "menu"
+            widget: "object"
+            fields:
+              - label: "topbar"
+                name: "topbar"
+                widget: "list"
+                fields:
+                - {label: weight, name: weight, widget: text }
+                - {label: name, name: name, widget: text}
+                - {label: url, name: url, widget: text}
+                - {label: pre, name: pre, widget: text}
