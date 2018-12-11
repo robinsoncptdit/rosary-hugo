@@ -39,6 +39,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Headings, name: heading, widget: string}
               - {label: Link, name: url, widget: string}
               - {label: Icon, name: icon, widget: string}
+              - {label: Open in new window?, name:window, widget: boolean}
           - {label: Front Section 2 Image, name: front_more_img, widget: image}
           - {label: Front Section 2 Heading, name: front_more_heading, widget: string}
           - {label: Front Section 2 Text, name: front_more_text, widget: string}

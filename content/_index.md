@@ -19,16 +19,20 @@ front_boxes:
   - heading: Sacraments
     icon: fa fa-bell-o
     url: /schedule-and-directions
+    window: false
   - heading: Bulletin
     icon: fa fa-newspaper-o
     url: /bulletin
+    window: false
   - heading: Give
     icon: fa fa-handshake-o
     url: >-
       https://www.eservicepayments.com/cgi-bin/Vanco_ver3.vps?appver3=Fi1giPL8kwX_Oe1AO50jRpD4Ri1ipMz8SjtO-fInVtuhjXsUKRLlmI4vCU4-rZZZ2EvVVAEjqawDomKT1pbouYCLiHsYNviTLNfVAvw7pMg=&ver=3
+    window: false
   - heading: Register
     icon: fa fa-user-plus
-    url: '.#'
+    url: 'https://google.com'
+    window: true
 front_more_heading: PARISH HALL RENTAL
 front_more_img: img/parish-hall.jpg
 front_more_text: >-

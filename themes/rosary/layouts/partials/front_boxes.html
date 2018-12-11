@@ -6,7 +6,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6 p-3">
                 <div class="box-icon {{ .icon_class }} hover-big text-center {{ .text_class }}" data-pg-name="Icon Box">
                     <div class="box-simple">
-                        <a href="{{ .url }}" target="_self">
+                        <a href="{{ .url }}" target="{{ with .window }}_blank {{ else }}_self{{ end }}">
                             <div class="icon-outlined icon-lg">
                                 <i class="{{ .icon }}"></i>
                             </div>
