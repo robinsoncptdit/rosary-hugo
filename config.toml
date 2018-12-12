@@ -86,13 +86,13 @@ paginate = 10
     blog = "/blog/:year/:month/:day/:filename/"
 
 # Enable or disable top bar with social icons
-[params.topbar]
-    enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us at 850-769-5067 or office@olr.ptdiocese.org</p>
-      <p class="hidden-md hidden-lg"><a href="tel:1-850-769-5067" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
-      <a href="mailto:office@olr.ptdiocese.org">office@olr.ptdiocese.org" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
-      </p>
-      """ # change to yours
+#[params.topbar]
+#    enable = true
+#    text = """<p class="hidden-sm hidden-xs">Contact us at 850-769-5067 or office@olr.ptdiocese.org</p>
+#      <p class="hidden-md hidden-lg"><a href="tel:1-850-769-5067" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+#      <a href="mailto:office@olr.ptdiocese.org">office@olr.ptdiocese.org" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+#      </p>
+#      """ # change to yours
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
