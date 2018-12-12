@@ -107,12 +107,16 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Site City, name: site_city, widget: string}
           - {label: Site State, name: site_state, widget: string}
           - {label: Site Zip, name: site_zip, widget: string}
+          - {label: Address Latitude, name: site_latitude, widget: string}
+          - {label: Address Longitude, name: site_longitude, widget: string}
+          - {label: Direction (from Google), name: site_direction, widget: string}
           - {label: Phone Number (XXX) XXX-XXXX, name: site_phone, widget: string}
           - {label: Fax Number (XXX) XXX-XXXX, name: site_fax, widget: string}
           - {label: Email, name: site_email, widget: string}
           - {label: ChurchDB URL, name: site_churchDBURL, widget: string}
           - {label: eGiving URL, name: site_eGiving, widget: string}
           - {label: Site Footer Image, name: site_footer_img, widget: image}
+          - {label: Enable Topbar?, name: site_topbar_enable, widget: boolean, default: true}
           - label: "menus"
             name: "menu"
             widget: "object"

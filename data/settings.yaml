@@ -12,6 +12,9 @@ site_eGiving: >-
   https://www.eservicepayments.com/cgi-bin/Vanco_ver3.vps?appver3=Fi1giPL8kwX_Oe1AO50jRpD4Ri1ipMz8SjtO-fInVtuhjXsUKRLlmI4vCU4-rZZZ2EvVVAEjqawDomKT1pbouYCLiHsYNviTLNfVAvw7pMg=&ver=3
 site_footer_img: img/olr-footer.png
 site_topbar_enable: true
+site_latitude: 30.246317 # find in Google maps and put here
+site_longitude: -85.564166
+site_direction: ""
 menu:
   topbar:
     - name: Facebook
