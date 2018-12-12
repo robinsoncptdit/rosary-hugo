@@ -1,4 +1,4 @@
-{{ if .Site.Params.topbar.enable }}
+{{ if .Site.Data.settings.site_topbar_enable }}
 <div class="top-bar">
     <div class="container">
         <div class="row d-flex align-items-center">
@@ -16,10 +16,10 @@
                         </li>
                     </ul>
                     <ul class="social-custom list-inline">
-                      {{ range .Site.Menus.topbar.ByWeight }}
-                        {{ if ne .URL "" }}
+                      {{ range .Site.Data.settings.menu.topbar }}
+                        {{ if ne .url "" }}
                         <li class="list-inline-item">
-                            <a href="{{ .URL }}" target="_blank">{{ .Pre }}</a>
+                            <a href="{{ .url }}" target="_blank">{{ .pre | safeHTML }}</a>
                         </li>
                         {{ end }}
                       {{ end }}

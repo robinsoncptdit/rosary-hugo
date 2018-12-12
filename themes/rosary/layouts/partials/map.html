@@ -1,16 +1,15 @@
-{{ if isset .Site.Params "latitude" }}
-  {{ if isset .Site.Params "longitude" }}
+{{ if isset .Site.Data.settings.site_latitude }}
+  {{ if isset .Site.Data.settings.longitude }}
       <div style="display: none;">
-        <input id="gmap-lat" value="{{ .Site.Params.latitude }}" />
-        <input id="gmap-lng" value="{{ .Site.Params.longitude }}" />
+        <input id="gmap-lat" value="{{ .Site.Data.settings.site_latitude }}" />
+        <input id="gmap-lng" value="{{ .Site.Data.settings.longitude }}" />
         <input id="gmap-marker" value="{{ .Site.BaseURL }}img/marker.png" />
        {{ if isset .Site.Params "direction" }}
-          <input id="gmap-dir" value="{{ .Site.Params.direction }}" />
+          <input id="gmap-dir" value="{{ .Site.Data.settings.site_direction }}" />
         {{ else }}
-          <input id="gmap-dir" value="{{ .Site.Params.latitude }},{{ .Site.Params.longitude }}" />
+          <input id="gmap-dir" value="{{ .Site.Data.settings.site_latitude }},{{ .Site.Data.settings.site_longitude }}" />
         {{ end }}
       </div>
       <div id="map" />
-      FOOOOOOOOO
   {{ end }}
 {{ end }}
