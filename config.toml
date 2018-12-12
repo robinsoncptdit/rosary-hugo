@@ -35,24 +35,6 @@ paginate = 10
     url  = "https://www.eservicepayments.com/cgi-bin/Vanco_ver3.vps?appver3=Fi1giPL8kwX_Oe1AO50jRpD4Ri1ipMz8SjtO-fInVtuhjXsUKRLlmI4vCU4-rZZZ2EvVVAEjqawDomKT1pbouYCLiHsYNviTLNfVAvw7pMg=&ver=3"
     weight = 4
 
-  #[[menu.topbar]]
-  #    weight = 1
-  #    name = "Facebook"
-  #    url = "https://www.facebook.com"
-  #    pre = "<i class='fa fa-facebook'></i>"
-
-  #[[menu.topbar]]
-  #    weight = 2
-  #    name = "Twitter"
-  #    url = "https://www.twitter.com"
-  #    pre = "<i class='fa fa-twitter'></i>"
-
-  #[[menu.topbar]]
-  #    weight = 3
-  #    name = "Email"
-  #    url = "mailto:office@olr.ptdiocese.org"
-  #    pre = "<i class='fa fa-envelope'></i>"
-
   [params]
     viewMorePostLink = "/blog/"
     author = "" # Was devcows - switch
@@ -87,15 +69,15 @@ paginate = 10
     date_format = "January 2, 2006"
 
     logo = "img/Artboard-1.svg" # change
-    address = """<p><strong>Our Lady of the Rosary Catholic Church</strong>
-        <br>5622 JULIE DRIVE
-        <br>HIGHWAY 231 BAYOU GEORGE
-        <br>PANAMA CITY, FL 32404
-        <br>Phone: 850-769-5067
-        <br>Email: <a href="mailto:office@olr.ptdiocese.org">office@olr.ptdiocese.org</a>
-        <br>Office Hours: Please call
-      </p>
-      """ #change
+    #address = """<p><strong>Our Lady of the Rosary Catholic Church</strong>
+    #    <br>5622 JULIE DRIVE
+    #    <br>HIGHWAY 231 BAYOU GEORGE
+    #    <br>PANAMA CITY, FL 32404
+    #    <br>Phone: 850-769-5067
+    #    <br>Email: <a href="mailto:office@olr.ptdiocese.org">office@olr.ptdiocese.org</a>
+    #    <br>Office Hours: Please call
+    #  </p>
+    #  """ #change
     latitude = "30.246317" # find in Google maps and put here
     longitude = "-85.564166"
     direction = ""
